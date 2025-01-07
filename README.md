@@ -48,6 +48,28 @@ dev0.axis0.encoder.config.[value of the seting to change] = [value]
 dev0.axis0.motor.config.[value of the seting to change] = [value]
 ```
 
+## Load configuration from json file
+- connect the odive to pc
+- Load configuration from json file
+```bash
+odrivetool restore-config config.json 
+```
+- Enter odrive utility
+```bash
+odrivetool
+```
+- Save the configuration
+```bash
+dev0.save_configuration()
+```
+## Save configuration to json file
+- connect the odive to pc
+- backup the configuration to json file
+```bash
+odrivetool backup-config
+```
+
+
 # Problemns
 ### MotorError errors
 After calibreting odrive without saving the configuration, the motors seem to be working and after saving the configuration the motors are not working anymore. The errors are usually:
