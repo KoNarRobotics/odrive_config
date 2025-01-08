@@ -97,10 +97,13 @@ dev0.save_configuration()
 ## WARNING
 - sometimes configuration is not loaded correctly from json backup. [ if there is some weard errors try to check the config to see if values in odrve are different form the backup. Then set the values manually and save the configuration]
 
+- Odrive that we use is outdated so we have to use firmware version 0.5.6 .
 
 # Helpfull links
 - [Odrive geting started](https://docs.odriverobotics.com/v/0.5.4/getting-started.html#install-odrivetool)
 
 - [Odrive firmware install docs](https://docs.odriverobotics.com/v/0.5.4/odrivetool.html?highlight=elf#device-firmware-update)
 
-- [Odrive firmware](https://github.com/odriverobotics/ODrive/releases)
+- [Odrive firmware GitHub](https://github.com/odriverobotics/ODrive/releases)
+
+- [Odrive firmware list](https://docs.odriverobotics.com/releases/firmware)
